@@ -78,6 +78,7 @@ function changeFunction() {
 }
 
 function runCode(){
+
     $.ajax({
         url : "/app/compiler.php",
         method: "POST",
