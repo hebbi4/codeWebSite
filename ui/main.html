@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Practice programs</title>
+    <link rel="stylesheet" href="css/style.css"/>
+</head>
+<body>
+    <div class="headder">Æfingar forrit fyrir áfanga í HÍ</div>
+
+    <!--Div þar sem er hægt að velja á milli áfanga ef það er bætt við í compilerinn
+        haft hidden núna þar sem það er bara verið að vinna með forritunarmál-->
+    <div hidden class="control-panel">
+        Veldu áfanga:
+        &nbsp; &nbsp;
+        <select name="courses" id="courses" onchange="changeCourse()">
+            <option value="forritunarmal">Forritunarmál</option>
+            <option value="tolvunarfraedi1">Tölvunarfræði 1</option>
+            <option value="tolvunarfraedi2">Tölvunarfræði 2</option>
+        </select>
+    </div>
+
+    <div class="forritunarmal_mal">
+        Veldu forritunarmál:
+        &nbsp; &nbsp;
+        <select name="languages" id="languages" onchange="changeLanguage()">
+            <option value="scheme">Scheme</option>
+            <option value="haskell">Haskell</option>
+            <option value="ocaml">Ocaml</option>
+            <!-- <option value="morpho">Morpho</option> -->
+        </select>
+    </div>
+
+    <div class="forritunarmal_mal_fall">
+        Veldu fall:
+        &nbsp; &nbsp;
+        <select name="fmal_fall" id="fmal_fall" onchange="changeFunction()">
+            <option> Veldu fall</option>
+            <option value="foldl">foldl</option>
+            <option value="foldr">foldr</option>
+            <option value="atoi">atoi</option>
+            <option value="iota">iota</option>
+            <option value="powerlist">powerlist</option>
+        </select>
+    </div>
+
+    <div class="editor" id="editor"></div>
+    <div class="button-container">
+        <button  class="btn" onclick="runCode()">Prufa</button>
+    </div>
+    <div class="output"></div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/lib/ace.js"></script>
+    <script src="js/lib/theme-monokai.js"></script>
+    <script src="js/ide.js"></script>
+    
+</body>
+</html>

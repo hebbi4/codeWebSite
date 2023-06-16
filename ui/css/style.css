@@ -1,0 +1,54 @@
+*{margin: 0;}
+
+.headder {
+    background: #57a958;
+    text-align: left;
+    font-size: 20px;
+    font-weight: bold;
+    color: black;
+    padding: 4px;
+    font-family: sans-serif;
+}
+
+.control-panel {
+    background: lightgray;
+    text-align: right;
+    padding: 4px;
+    font-family: sans-serif;
+}
+
+.forritunarmal_mal {
+    background: lightgray;
+    text-align: right;
+    padding: 4px;
+    font-family: sans-serif;
+}
+
+.forritunarmal_mal_fall {
+    background: lightgray;
+    text-align: right;
+    padding: 4px;
+    font-family: sans-serif;
+}
+
+#editor {height: 400px;}
+
+.button-container {
+    text-align: right;
+    padding: 4px;
+}
+
+.btn {
+    background: #57a958;
+    color: black;
+    padding: 8px;
+    border: 0;
+}
+
+.output {
+    padding: 4px;
+    border: 2px solid gray;
+    min-height: 100px;
+    width: 99%;
+    resize: none;
+}
