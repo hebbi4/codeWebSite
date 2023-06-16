@@ -78,5 +78,16 @@ function changeFunction() {
 }
 
 function runCode(){
-    console.log("virkar")
+    $.ajax({
+        url : "/app/compiler.php",
+        method: "POST",
+        data: {
+            language: $('#languages').val(),
+            code: editor.getSession().getValue()
+        },
+
+        success: function(response){
+            $(".output").text(response)
+        }
+    })
 }
